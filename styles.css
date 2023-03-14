@@ -1,57 +1,172 @@
-.bg-violet{
-    background-color: hsl(260, 100%, 54%);
-
+body {
+  background-color: lightgrey;
 }
 
-.bg-circle{
-    background-color: hsl(260, 100%, 50%);
-
+.attribution{
+ text-align: center;
 }
 
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .centered-relative {
-    margin: 0 auto;
-  }
-.absoluto{
-    transform: translate(0%, 50%);
+@font-face {
+  font-family: Hanken;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
-  .medio {
-    left: 50%;
+
+@media (max-width:480px){
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightgrey;
+    text-align: center;
+    height: 75%;
   }
 
-.border-circulo{
+  .card {
+    flex: 0 1 24%;
+    border-radius: 0 10px 10px 0;
+    
+    background-color: white;
+  }
+  .card-purple {
+    flex: 0 1 50%;
     border-radius: 10px;
+    margin-left: 2%;
+    background-color: white;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+
 }
 
-.border-circulo-derecha{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.circulo{
-    width: 120px;
-    height: 120px;
+@media (max-width:3840px){
+  .texto{
+      font-size: 18px;
+      color: hsla(0, 0%, 93%, 0.629);
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-bottom: 15%;
+  }
+  .centered{
+    display: flex;
+    justify-content: center;
+  }
+  .circulo{
     border-radius: 50%;
-}
-.simple-linear {
-    background: linear-gradient(rgb(107, 73, 232) , rgb(50, 50, 255));
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-.simple-linear2 {
-    background: linear-gradient(rgb(43, 32, 207),rgb(82, 43, 223));
+  .resultado{
+    font-size: 80px;
+    font-weight: bolder;
+    
+  }
+  .cien{
+    margin-top: -5%;
+    font-size: medium;
+    font-weight: bolder;
+  }
+  .cards {
+    position: sticky;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: rgba(211, 211, 211, 0);
+    text-align: center;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
   }
 
-.transparente{
-    color:hsla(0, 0%, 100%, 0.583)
-}
+  .blanco{
+    color: hsla(0, 0%, 100%, 0.529);
+  }
 
-.espacio{
-
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .card {
+    font-family: Hanken;
+    flex: 0 1 30%;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+    z-index: 1;
+  }
+  .card-purple {
+    font-family: Hanken;
+    color: white;
+    flex: 0 1 30%;
+    border-radius: 10px;
+    margin-right: -1%;
+    z-index: 2;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+  .cols{
+    display: flex;
+    flex-flow: column wrap;
+    
+  }
+  .col{
+    flex: 0 1 70%;
+    text-align: left;
+    align-items: center;
+  }
+  .fin{
+    margin-left: auto;
+    margin-right: 5%;
+    display: inline;
+  }
+  .row{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border-radius: 5px;
+    height: 50px;
+    font-size: large;
+  }
+  .reaction-color{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.087);
+  }
+  .memory-color{
+    color: hsl(39, 100%, 56%);
+    background-color: rgba(255, 177, 31, 0.155);
+  }
+  .verbal-color{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.094);
+  }
+  .visual-color{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.127);
+  }
+  .boton{
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    margin-top: 7%;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    font-size: larger;
+  }
+  .boton:hover{
+    background-color: hsla(256, 72%, 46%, 1);
+  }
+  .bolder{
+    font-weight: bolder;
+    color: black;
+  }
+  .mute{
+    color: lightslategrey
+  }
+  .principio{
+    text-align: left;
+    margin-left: 10%;
+  }
+  .imagen{
+    margin: 3%;
+  }
 }
-  
