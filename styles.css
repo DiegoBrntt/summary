@@ -15,9 +15,9 @@ body {
   .texto{
       font-size: 18px;
       color: hsla(0, 0%, 93%, 0.629);
-      margin-left: 15%;
-      margin-right: 15%;
-      margin-bottom: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 5%;
   }
   .centered{
     display: flex;
@@ -26,14 +26,14 @@ body {
   .circulo{
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .resultado{
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bolder;
     
   }
