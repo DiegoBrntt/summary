@@ -11,7 +11,7 @@ body {
   src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
-@media (max-width:480px){
+@media (max-width:799px){
   .texto{
     font-size: 18px;
     color: hsla(0, 0%, 93%, 0.629);
@@ -58,8 +58,8 @@ body {
 .card {
   font-family: Hanken;
   flex: 0 1 50%;
-  border-radius: 10px;
-  top: -1%;
+  border-radius: 0 0 10px 10px;
+  margin-top: -2%;
   background-color: white;
   z-index: 1;
 }
@@ -67,8 +67,7 @@ body {
   font-family: Hanken;
   color: white;
   flex: 0 1 50%;
-  border-radius: 10px;
-  margin-bottom: -1%;
+  border-radius: 0 0 10px 10px;
   z-index: 2;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
@@ -142,7 +141,7 @@ body {
 }
 }
 
-@media (min-width:481px){
+@media (min-width:800px){
   .texto{
       font-size: 18px;
       color: hsla(0, 0%, 93%, 0.629);
@@ -253,7 +252,7 @@ body {
     color: white;
     margin-top: 7%;
     height: 50px;
-    width: 300px;
+    width: 70%;
     border-radius: 25px;
     font-size: larger;
     border: 0;
