@@ -2,16 +2,16 @@ body {
   background-color: lightgrey;
 }
 
-.attribution{
- text-align: center;
-}
-
 @font-face {
   font-family: Hanken;
   src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
 @media (max-width:799px){
+  .attribution{
+    text-align: center;
+    margin-top: 2%;
+   }
   .texto{
     font-size: 18px;
     color: hsla(0, 0%, 93%, 0.629);
@@ -49,6 +49,7 @@ body {
   justify-content: center;
   background-color: rgba(211, 211, 211, 0);
   text-align: center;
+  margin: -2%;
 }
 
 .blanco{
@@ -57,7 +58,7 @@ body {
 
 .card {
   font-family: Hanken;
-  flex: 0 1 50%;
+  flex: 0 1 100%;
   border-radius: 0 0 10px 10px;
   margin-top: -2%;
   background-color: white;
@@ -66,8 +67,8 @@ body {
 .card-purple {
   font-family: Hanken;
   color: white;
-  flex: 0 1 50%;
-  border-radius: 0 0 10px 10px;
+  flex: 0 1 100%;
+  border-radius: 0 0 20px 20px;
   z-index: 2;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
@@ -142,6 +143,9 @@ body {
 }
 
 @media (min-width:800px){
+  .attribution{
+    text-align: center;
+   }
   .texto{
       font-size: 18px;
       color: hsla(0, 0%, 93%, 0.629);
@@ -208,7 +212,6 @@ body {
   .cols{
     display: flex;
     flex-flow: column wrap;
-    
   }
   .col{
     flex: 0 1 70%;
